@@ -1,0 +1,54 @@
+/*reglas*/
+body{
+    margin:0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+.row::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.column-1{
+    width: 100%;
+    background-color: blueviolet;
+    float: left;
+
+}
+.column-2{
+    width: 50%;
+    float: left;
+    background-color: cornflowerblue;
+}
+
+.column-3{
+    width: 33.33%;
+    float: left;
+    background-color: cyan;
+
+}
+
+.column-4{
+    width: 25%;
+    float: left;
+    background-color: darkred;
+}
+
+@media only screen and (max-width: 600px) {
+    .column-3 {
+        width: 100%;
+    }
+
+    .column-4{
+        width:100%;
+    }
+    #caja10{
+        width: 100%;
+    }
+
+}
